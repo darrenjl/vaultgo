@@ -21,3 +21,16 @@ func WithAuthToken(token string) ClientOpts {
 		return nil
 	}
 }
+
+func WithAwsAuth(mountpoint, role, header string) ClientOpts {
+	return func(c *Client) error {
+		awsAuthProvider, err := NewAwsAuth(c, mountpoint, role, header)
+		if err != nil {
+			return err
+		}
+
+		c.auth = awsAuthProvider
+
+		return nil
+	}
+}

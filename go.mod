@@ -1,9 +1,10 @@
-module github.com/mittwald/vaultgo
+module github.com/darrenjl/vaultgo
 
 go 1.14
 
 require (
 	github.com/Microsoft/hcsshim v0.8.9 // indirect
+	github.com/aws/aws-sdk-go v1.35.32 // indirect
 	github.com/containerd/continuity v0.0.0-20200413184840-d3ef23f19fbb // indirect
 	github.com/docker/go-connections v0.4.0
 	github.com/fatih/color v1.9.0 // indirect
@@ -26,9 +27,7 @@ require (
 	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/stretchr/testify v1.6.1
 	github.com/testcontainers/testcontainers-go v0.7.0
-	golang.org/x/net v0.0.0-20200625001655-4c5254603344 // indirect
 	golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208 // indirect
-	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect
 	golang.org/x/text v0.3.3 // indirect
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
 	google.golang.org/genproto v0.0.0-20200702021140-07506425bd67 // indirect
